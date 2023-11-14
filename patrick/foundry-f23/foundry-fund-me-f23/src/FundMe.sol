@@ -2,12 +2,16 @@
 pragma solidity ^0.8.21;
 
 import {PriceConverter} from "./PriceConverter.sol";
+import {AggregatorV3Interface} from "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
 
 contract FundMe {
     //to add priceconverter library and abi's to uint256
     using PriceConverter for uint256;
 
     uint256 public constant minDonation = 5; //constant to minimize the gas fees cause minDonation is only declared once
+
+    //this used for refactoring so as to make the contract deployable on any chain with the provided node address
+    AggregatorV3Interface s_priceFeed;
 
     //to store the addresses of funders in an address array
     address[] funder;
@@ -17,7 +21,7 @@ contract FundMe {
     //to fund which can be done by anyone
     function fund() public payable {
         require(
-            msg.value.convertodollars() >= (minDonation * 1e18),
+            msg.value.convertodollars(s_priceFeed) >= (minDonation * 1e18),
             "the message was reverted"
         );
 
@@ -25,13 +29,23 @@ contract FundMe {
         addresstoamoundFuded[msg.sender] += msg.value;
     }
 
+    //to check whether the function is working or not we use this
+    function getVersion() public view returns (uint256) {
+        //AggregatorV3Interface dataFeed = new AggregatorV3Interface(0x694AA1769357215DE4FAC081bf1f309aDC325306);
+        //return dataFeed.Version();
+
+        //this after refactoring to get version
+        return s_priceFeed.version();
+    }
+
     // withdraw
 
     address public immutable owner; //use immutable cause after deployment it is not getting used again
 
     //constructor immediately executes the lines inside it as soon as the contract is deployed
-    constructor() {
+    constructor(address priceFeed) {
         owner = msg.sender;
+        s_priceFeed = AggregatorV3Interface(priceFeed);
     }
 
     function withdraw() public isowner {

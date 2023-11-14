@@ -4,11 +4,15 @@ pragma solidity ^0.8.21;
 import {AggregatorV3Interface} from "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
 
 library PriceConverter {
-    function giverate() internal view returns (uint256) {
+    function giverate(
+        AggregatorV3Interface dataFeed
+    ) internal view returns (uint256) {
         //to save the AggregatorV3Interface on address 0x694AA1769357215DE4FAC081bf1f309aDC325306
-        AggregatorV3Interface dataFeed = AggregatorV3Interface(
-            0x694AA1769357215DE4FAC081bf1f309aDC325306
-        );
+        // AggregatorV3Interface dataFeed = AggregatorV3Interface(
+        //     0x694AA1769357215DE4FAC081bf1f309aDC325306
+        // );
+
+        //refactoring
 
         //this is the format in which latestRoundData() sends the data
         (
@@ -25,9 +29,10 @@ library PriceConverter {
 
     //to convert eht eth amount to dollars and takes the ETH in USD as input
     function convertodollars(
-        uint256 depositedETH
+        uint256 depositedETH,
+        AggregatorV3Interface dataFeed
     ) internal view returns (uint256 ethindollars) {
-        return ((depositedETH * giverate()) / 1e18);
+        return ((depositedETH * giverate(dataFeed)) / 1e18);
         //both depositedEth and giverate is 1e18 and their multiplicatoin gives 1e36 thus divide by 1e18
     }
 }

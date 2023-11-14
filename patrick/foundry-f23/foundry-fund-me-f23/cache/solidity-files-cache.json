@@ -900,8 +900,8 @@
       }
     },
     "script/DeployFundMe.s.sol": {
-      "lastModificationDate": 1699953105897,
-      "contentHash": "b6775ebb6a922bbcff6e3d81e8ec0938",
+      "lastModificationDate": 1699994115498,
+      "contentHash": "5dd2746f17dc1c5b3f016a6bbb392cad",
       "sourceName": "script/DeployFundMe.s.sol",
       "solcConfig": {
         "settings": {
@@ -948,8 +948,10 @@
         "lib/forge-std/src/console2.sol",
         "lib/forge-std/src/interfaces/IMulticall3.sol",
         "lib/forge-std/src/safeconsole.sol",
+        "script/HelperConfig.s.sol",
         "src/FundMe.sol",
-        "src/PriceConverter.sol"
+        "src/PriceConverter.sol",
+        "test/mocks/MockV3Aggregator.sol"
       ],
       "versionRequirement": "^0.8.21",
       "artifacts": {
@@ -958,9 +960,66 @@
         }
       }
     },
+    "script/HelperConfig.s.sol": {
+      "lastModificationDate": 1699994061553,
+      "contentHash": "12c26f8e3fec2d0448bc85afea1ab7e6",
+      "sourceName": "script/HelperConfig.s.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/src/Base.sol",
+        "lib/forge-std/src/Script.sol",
+        "lib/forge-std/src/StdChains.sol",
+        "lib/forge-std/src/StdCheats.sol",
+        "lib/forge-std/src/StdJson.sol",
+        "lib/forge-std/src/StdMath.sol",
+        "lib/forge-std/src/StdStorage.sol",
+        "lib/forge-std/src/StdStyle.sol",
+        "lib/forge-std/src/StdUtils.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/console.sol",
+        "lib/forge-std/src/console2.sol",
+        "lib/forge-std/src/interfaces/IMulticall3.sol",
+        "lib/forge-std/src/safeconsole.sol",
+        "test/mocks/MockV3Aggregator.sol"
+      ],
+      "versionRequirement": "^0.8.21",
+      "artifacts": {
+        "HelperConfig": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "HelperConfig.s.sol/HelperConfig.json"
+        }
+      }
+    },
     "src/FundMe.sol": {
-      "lastModificationDate": 1699953111136,
-      "contentHash": "eab8062f02a7e2588fdd79636c9a35de",
+      "lastModificationDate": 1699979533962,
+      "contentHash": "3a4d77341996b961cf313dd81bbbed2c",
       "sourceName": "src/FundMe.sol",
       "solcConfig": {
         "settings": {
@@ -1003,8 +1062,8 @@
       }
     },
     "src/PriceConverter.sol": {
-      "lastModificationDate": 1699953109471,
-      "contentHash": "6b83406e5f847e3ab4c25dee1a04ffb1",
+      "lastModificationDate": 1699971874963,
+      "contentHash": "0c533ebdb4304988677cbff9c99219fd",
       "sourceName": "src/PriceConverter.sol",
       "solcConfig": {
         "settings": {
@@ -1046,8 +1105,8 @@
       }
     },
     "test/FundMeTest.t.sol": {
-      "lastModificationDate": 1699953191971,
-      "contentHash": "696e2b6d7a29a00205fb04720cb055b4",
+      "lastModificationDate": 1699979325579,
+      "contentHash": "c2af1d73cd2031c37fbabe1701533f90",
       "sourceName": "test/FundMeTest.t.sol",
       "solcConfig": {
         "settings": {
@@ -1082,6 +1141,7 @@
         "lib/chainlink-brownie-contracts/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol",
         "lib/forge-std/lib/ds-test/src/test.sol",
         "lib/forge-std/src/Base.sol",
+        "lib/forge-std/src/Script.sol",
         "lib/forge-std/src/StdAssertions.sol",
         "lib/forge-std/src/StdChains.sol",
         "lib/forge-std/src/StdCheats.sol",
@@ -1098,13 +1158,57 @@
         "lib/forge-std/src/console2.sol",
         "lib/forge-std/src/interfaces/IMulticall3.sol",
         "lib/forge-std/src/safeconsole.sol",
+        "script/DeployFundMe.s.sol",
+        "script/HelperConfig.s.sol",
         "src/FundMe.sol",
-        "src/PriceConverter.sol"
+        "src/PriceConverter.sol",
+        "test/mocks/MockV3Aggregator.sol"
       ],
       "versionRequirement": "^0.8.21",
       "artifacts": {
         "FundMeTest": {
           "0.8.22+commit.4fc1097e.Linux.gcc": "FundMeTest.t.sol/FundMeTest.json"
+        }
+      }
+    },
+    "test/mocks/MockV3Aggregator.sol": {
+      "lastModificationDate": 1699993107743,
+      "contentHash": "5dc48a685fb9d0ac657705ed298c6c27",
+      "sourceName": "test/mocks/MockV3Aggregator.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.21",
+      "artifacts": {
+        "MockV3Aggregator": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "MockV3Aggregator.sol/MockV3Aggregator.json"
         }
       }
     }
