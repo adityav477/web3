@@ -88,16 +88,16 @@
         2412
       ],
       "StdStorage": [
-        8512
+        8551
       ],
       "TestBase": [
         2403
       ],
       "Vm": [
-        13967
+        14006
       ],
       "VmSafe": [
-        13496
+        13535
       ]
     },
     "nodeType": "SourceUnit",
@@ -127,7 +127,7 @@
         "file": "./StdStorage.sol",
         "nameLocation": "-1:-1:-1",
         "scope": 2413,
-        "sourceUnit": 10152,
+        "sourceUnit": 10191,
         "symbolAliases": [
           {
             "foreign": {
@@ -135,7 +135,7 @@
               "name": "StdStorage",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 8512,
+              "referencedDeclaration": 8551,
               "src": "73:10:2",
               "typeDescriptions": {}
             },
@@ -153,7 +153,7 @@
         "file": "./Vm.sol",
         "nameLocation": "-1:-1:-1",
         "scope": 2413,
-        "sourceUnit": 13968,
+        "sourceUnit": 14007,
         "symbolAliases": [
           {
             "foreign": {
@@ -161,7 +161,7 @@
               "name": "Vm",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 13967,
+              "referencedDeclaration": 14006,
               "src": "118:2:2",
               "typeDescriptions": {}
             },
@@ -173,7 +173,7 @@
               "name": "VmSafe",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 13496,
+              "referencedDeclaration": 13535,
               "src": "122:6:2",
               "typeDescriptions": {}
             },
@@ -902,7 +902,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_Vm_$13967",
+              "typeIdentifier": "t_contract$_Vm_$14006",
               "typeString": "contract Vm"
             },
             "typeName": {
@@ -915,13 +915,13 @@
                   "1564:2:2"
                 ],
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 13967,
+                "referencedDeclaration": 14006,
                 "src": "1564:2:2"
               },
-              "referencedDeclaration": 13967,
+              "referencedDeclaration": 14006,
               "src": "1564:2:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Vm_$13967",
+                "typeIdentifier": "t_contract$_Vm_$14006",
                 "typeString": "contract Vm"
               }
             },
@@ -951,10 +951,10 @@
                 "name": "Vm",
                 "nodeType": "Identifier",
                 "overloadedDeclarations": [],
-                "referencedDeclaration": 13967,
+                "referencedDeclaration": 14006,
                 "src": "1590:2:2",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_type$_t_contract$_Vm_$13967_$",
+                  "typeIdentifier": "t_type$_t_contract$_Vm_$14006_$",
                   "typeString": "type(contract Vm)"
                 }
               },
@@ -970,7 +970,7 @@
               "src": "1590:14:2",
               "tryCall": false,
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Vm_$13967",
+                "typeIdentifier": "t_contract$_Vm_$14006",
                 "typeString": "contract Vm"
               }
             },
@@ -989,7 +989,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_struct$_StdStorage_$8512_storage",
+              "typeIdentifier": "t_struct$_StdStorage_$8551_storage",
               "typeString": "struct StdStorage"
             },
             "typeName": {
@@ -1002,13 +1002,13 @@
                   "1610:10:2"
                 ],
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 8512,
+                "referencedDeclaration": 8551,
                 "src": "1610:10:2"
               },
-              "referencedDeclaration": 8512,
+              "referencedDeclaration": 8551,
               "src": "1610:10:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_struct$_StdStorage_$8512_storage_ptr",
+                "typeIdentifier": "t_struct$_StdStorage_$8551_storage_ptr",
                 "typeString": "struct StdStorage"
               }
             },
@@ -1085,7 +1085,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_VmSafe_$13496",
+              "typeIdentifier": "t_contract$_VmSafe_$13535",
               "typeString": "contract VmSafe"
             },
             "typeName": {
@@ -1098,13 +1098,13 @@
                   "1737:6:2"
                 ],
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 13496,
+                "referencedDeclaration": 13535,
                 "src": "1737:6:2"
               },
-              "referencedDeclaration": 13496,
+              "referencedDeclaration": 13535,
               "src": "1737:6:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_VmSafe_$13496",
+                "typeIdentifier": "t_contract$_VmSafe_$13535",
                 "typeString": "contract VmSafe"
               }
             },
@@ -1134,10 +1134,10 @@
                 "name": "VmSafe",
                 "nodeType": "Identifier",
                 "overloadedDeclarations": [],
-                "referencedDeclaration": 13496,
+                "referencedDeclaration": 13535,
                 "src": "1771:6:2",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_type$_t_contract$_VmSafe_$13496_$",
+                  "typeIdentifier": "t_type$_t_contract$_VmSafe_$13535_$",
                   "typeString": "type(contract VmSafe)"
                 }
               },
@@ -1153,7 +1153,7 @@
               "src": "1771:18:2",
               "tryCall": false,
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_VmSafe_$13496",
+                "typeIdentifier": "t_contract$_VmSafe_$13535",
                 "typeString": "contract VmSafe"
               }
             },
