@@ -14,9 +14,10 @@ contract FundMe {
     AggregatorV3Interface s_priceFeed;
 
     //to store the addresses of funders in an address array
-    address[] funder;
+    address[] private s_funder;
 
-    mapping(address funder => uint256 amountFunded) public addresstoamoundFuded;
+    mapping(address funder => uint256 amountFunded)
+        private s_addresstoamoundFuded;
 
     //to fund which can be done by anyone
     function fund() public payable {
@@ -25,8 +26,8 @@ contract FundMe {
             "the message was reverted"
         );
 
-        funder.push(msg.sender);
-        addresstoamoundFuded[msg.sender] += msg.value;
+        s_funder.push(msg.sender);
+        s_addresstoamoundFuded[msg.sender] += msg.value;
     }
 
     //to check whether the function is working or not we use this
@@ -55,14 +56,14 @@ contract FundMe {
         //if after withdrawal any past funder funds again then it will be added to the prior fund which is already withdrawn
         for (
             uint256 funderindex = 0;
-            funderindex < funder.length;
+            funderindex < s_funder.length;
             funderindex++
         ) {
-            addresstoamoundFuded[funder[funderindex]] = 0;
+            s_addresstoamoundFuded[s_funder[funderindex]] = 0;
         }
 
         //this to make the funder array empty
-        funder = new address[](0);
+        s_funder = new address[](0);
 
         //now we need to transfer the balance from the contract to the owners account
         //for more ifno go to cahgtpt blockchain list
@@ -105,5 +106,18 @@ contract FundMe {
     fallback() external payable {
         fund(); //whenever there is funds transfered to contract with wrong data(i.e there is no proper function given)
         //  then also fund is triggered ;
+    }
+
+    //views and getters function used for testing
+    //for testing the getAddressToAmount
+    function getAddressToAmount(
+        address fundersAddress
+    ) public view returns (uint256) {
+        return s_addresstoamoundFuded[fundersAddress];
+    }
+
+    //for gettting the address based on the index from the funders[] array
+    function getFunder(uint256 index) public view returns (address) {
+        return s_funder[index];
     }
 }
