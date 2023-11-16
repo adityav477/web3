@@ -36,7 +36,8 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "storageLayout"
               ]
             }
           },
@@ -77,7 +78,8 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "storageLayout"
               ]
             }
           },
@@ -118,7 +120,8 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "storageLayout"
               ]
             }
           },
@@ -168,7 +171,8 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "storageLayout"
               ]
             }
           },
@@ -223,7 +227,8 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "storageLayout"
               ]
             }
           },
@@ -267,7 +272,8 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "storageLayout"
               ]
             }
           },
@@ -310,7 +316,8 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "storageLayout"
               ]
             }
           },
@@ -358,7 +365,8 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "storageLayout"
               ]
             }
           },
@@ -399,7 +407,8 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "storageLayout"
               ]
             }
           },
@@ -440,7 +449,8 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "storageLayout"
               ]
             }
           },
@@ -483,7 +493,8 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "storageLayout"
               ]
             }
           },
@@ -524,7 +535,8 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "storageLayout"
               ]
             }
           },
@@ -570,7 +582,8 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "storageLayout"
               ]
             }
           },
@@ -613,7 +626,8 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "storageLayout"
               ]
             }
           },
@@ -657,7 +671,8 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "storageLayout"
               ]
             }
           },
@@ -716,7 +731,8 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "storageLayout"
               ]
             }
           },
@@ -760,7 +776,8 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "storageLayout"
               ]
             }
           },
@@ -801,7 +818,8 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "storageLayout"
               ]
             }
           },
@@ -842,7 +860,8 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "storageLayout"
               ]
             }
           },
@@ -883,7 +902,8 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "storageLayout"
               ]
             }
           },
@@ -900,8 +920,8 @@
       }
     },
     "script/DeployFundMe.s.sol": {
-      "lastModificationDate": 1700119326679,
-      "contentHash": "5dd2746f17dc1c5b3f016a6bbb392cad",
+      "lastModificationDate": 1700138684025,
+      "contentHash": "f88f42962f968284dd76df63a8534606",
       "sourceName": "script/DeployFundMe.s.sol",
       "solcConfig": {
         "settings": {
@@ -924,7 +944,8 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "storageLayout"
               ]
             }
           },
@@ -985,7 +1006,8 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "storageLayout"
               ]
             }
           },
@@ -1018,8 +1040,8 @@
       }
     },
     "src/FundMe.sol": {
-      "lastModificationDate": 1700119414273,
-      "contentHash": "7beafdc7bb3660ca9e3f539c60f92a42",
+      "lastModificationDate": 1700126212174,
+      "contentHash": "f5c308e7a8e60d330ec19a07c7a1f0e1",
       "sourceName": "src/FundMe.sol",
       "solcConfig": {
         "settings": {
@@ -1042,7 +1064,8 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "storageLayout"
               ]
             }
           },
@@ -1086,7 +1109,8 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "storageLayout"
               ]
             }
           },
@@ -1105,8 +1129,8 @@
       }
     },
     "test/FundMeTest.t.sol": {
-      "lastModificationDate": 1700119425470,
-      "contentHash": "61b20b40062c22ddf3b4c303d5881887",
+      "lastModificationDate": 1700152208320,
+      "contentHash": "acbe65045166599123458d0117c6d689",
       "sourceName": "test/FundMeTest.t.sol",
       "solcConfig": {
         "settings": {
@@ -1129,7 +1153,8 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "storageLayout"
               ]
             }
           },
@@ -1196,7 +1221,8 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "storageLayout"
               ]
             }
           },

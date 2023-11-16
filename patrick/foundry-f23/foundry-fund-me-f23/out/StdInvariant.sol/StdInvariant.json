@@ -379,6 +379,175 @@
     },
     "version": 1
   },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 7544,
+        "contract": "lib/forge-std/src/StdInvariant.sol:StdInvariant",
+        "label": "_excludedContracts",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_array(t_address)dyn_storage"
+      },
+      {
+        "astId": 7547,
+        "contract": "lib/forge-std/src/StdInvariant.sol:StdInvariant",
+        "label": "_excludedSenders",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_array(t_address)dyn_storage"
+      },
+      {
+        "astId": 7550,
+        "contract": "lib/forge-std/src/StdInvariant.sol:StdInvariant",
+        "label": "_targetedContracts",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_array(t_address)dyn_storage"
+      },
+      {
+        "astId": 7553,
+        "contract": "lib/forge-std/src/StdInvariant.sol:StdInvariant",
+        "label": "_targetedSenders",
+        "offset": 0,
+        "slot": "3",
+        "type": "t_array(t_address)dyn_storage"
+      },
+      {
+        "astId": 7556,
+        "contract": "lib/forge-std/src/StdInvariant.sol:StdInvariant",
+        "label": "_excludedArtifacts",
+        "offset": 0,
+        "slot": "4",
+        "type": "t_array(t_string_storage)dyn_storage"
+      },
+      {
+        "astId": 7559,
+        "contract": "lib/forge-std/src/StdInvariant.sol:StdInvariant",
+        "label": "_targetedArtifacts",
+        "offset": 0,
+        "slot": "5",
+        "type": "t_array(t_string_storage)dyn_storage"
+      },
+      {
+        "astId": 7563,
+        "contract": "lib/forge-std/src/StdInvariant.sol:StdInvariant",
+        "label": "_targetedArtifactSelectors",
+        "offset": 0,
+        "slot": "6",
+        "type": "t_array(t_struct(FuzzSelector)7535_storage)dyn_storage"
+      },
+      {
+        "astId": 7567,
+        "contract": "lib/forge-std/src/StdInvariant.sol:StdInvariant",
+        "label": "_targetedSelectors",
+        "offset": 0,
+        "slot": "7",
+        "type": "t_array(t_struct(FuzzSelector)7535_storage)dyn_storage"
+      },
+      {
+        "astId": 7571,
+        "contract": "lib/forge-std/src/StdInvariant.sol:StdInvariant",
+        "label": "_targetedInterfaces",
+        "offset": 0,
+        "slot": "8",
+        "type": "t_array(t_struct(FuzzInterface)7541_storage)dyn_storage"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_array(t_address)dyn_storage": {
+        "encoding": "dynamic_array",
+        "label": "address[]",
+        "numberOfBytes": "32",
+        "base": "t_address"
+      },
+      "t_array(t_bytes4)dyn_storage": {
+        "encoding": "dynamic_array",
+        "label": "bytes4[]",
+        "numberOfBytes": "32",
+        "base": "t_bytes4"
+      },
+      "t_array(t_string_storage)dyn_storage": {
+        "encoding": "dynamic_array",
+        "label": "string[]",
+        "numberOfBytes": "32",
+        "base": "t_string_storage"
+      },
+      "t_array(t_struct(FuzzInterface)7541_storage)dyn_storage": {
+        "encoding": "dynamic_array",
+        "label": "struct StdInvariant.FuzzInterface[]",
+        "numberOfBytes": "32",
+        "base": "t_struct(FuzzInterface)7541_storage"
+      },
+      "t_array(t_struct(FuzzSelector)7535_storage)dyn_storage": {
+        "encoding": "dynamic_array",
+        "label": "struct StdInvariant.FuzzSelector[]",
+        "numberOfBytes": "32",
+        "base": "t_struct(FuzzSelector)7535_storage"
+      },
+      "t_bytes4": {
+        "encoding": "inplace",
+        "label": "bytes4",
+        "numberOfBytes": "4"
+      },
+      "t_string_storage": {
+        "encoding": "bytes",
+        "label": "string",
+        "numberOfBytes": "32"
+      },
+      "t_struct(FuzzInterface)7541_storage": {
+        "encoding": "inplace",
+        "label": "struct StdInvariant.FuzzInterface",
+        "numberOfBytes": "64",
+        "members": [
+          {
+            "astId": 7537,
+            "contract": "lib/forge-std/src/StdInvariant.sol:StdInvariant",
+            "label": "addr",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_address"
+          },
+          {
+            "astId": 7540,
+            "contract": "lib/forge-std/src/StdInvariant.sol:StdInvariant",
+            "label": "artifacts",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_string_storage)dyn_storage"
+          }
+        ]
+      },
+      "t_struct(FuzzSelector)7535_storage": {
+        "encoding": "inplace",
+        "label": "struct StdInvariant.FuzzSelector",
+        "numberOfBytes": "64",
+        "members": [
+          {
+            "astId": 7531,
+            "contract": "lib/forge-std/src/StdInvariant.sol:StdInvariant",
+            "label": "addr",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_address"
+          },
+          {
+            "astId": 7534,
+            "contract": "lib/forge-std/src/StdInvariant.sol:StdInvariant",
+            "label": "selectors",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_bytes4)dyn_storage"
+          }
+        ]
+      }
+    }
+  },
   "ast": {
     "absolutePath": "lib/forge-std/src/StdInvariant.sol",
     "id": 7786,

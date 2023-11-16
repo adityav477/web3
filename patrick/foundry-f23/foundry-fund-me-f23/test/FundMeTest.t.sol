@@ -44,23 +44,104 @@ contract FundMeTest is Test {
         fundMe.fund();
     }
 
+    //test's whether the mappig function AddresstoAmount works properly
     function testFundUpdatesFundedDataStructure() public {
-        //prank - makes the next transactioN will be sent by USER
+        //prank -  the next transactioN will be sent by USER
         vm.prank(USER);
 
         fundMe.fund{value: SEND_VALUE}();
 
         // console.log(msg.sender);
         // console.log(address(this));
-        console.log(USER);
+        // console.log(USER);
 
         // uint256 amount = fundMe.getAddressToAmount(address(this);
         uint256 amount = fundMe.getAddressToAmount(USER);
         assertEq(amount, SEND_VALUE);
     }
+
+    //test's wehther the s_funder works proprly in storing the addresses of the senders
+    function testAddsFunderToArrayofFunders() public {
+        vm.prank(USER);
+        fundMe.fund{value: SEND_VALUE}();
+
+        address add = fundMe.getFunder(0);
+        assertEq(add, USER);
+    }
+
+    modifier funded() {
+        vm.prank(USER);
+        fundMe.fund{value: SEND_VALUE}();
+        _;
+    }
+
+    //test's that only owner can withdraw the funds
+    function testOnlyOwnerCanWithdraw() public funded {
+        vm.prank(USER);
+
+        // console.log(USER);
+        // console.log(fundMe.getOwner());
+
+        vm.expectRevert();
+        fundMe.withdraw(); //this fais becasue the USER is not the owner of the contract
+    }
+
+    //test withdraw function
+    function testWithdrawWithSingleFunder() public funded {
+        //Arrange
+        uint256 startingOwnerBalance = fundMe.getOwner().balance; //to check balance of ownder(here it is USER that deployed contract)
+        uint256 startingFundMeBalance = address(fundMe).balance; //to check the balance in the fundMe contract
+
+        //Act
+        vm.prank(fundMe.getOwner());
+        fundMe.withdraw();
+
+        // console.log(fundMe.getOwner());
+        // console.log(address(this));
+
+        //Assert
+        uint256 endingOwnerBalance = fundMe.getOwner().balance;
+        uint256 endingFundMeBalance = address(fundMe).balance;
+        assertEq(
+            endingOwnerBalance,
+            (startingOwnerBalance + startingFundMeBalance)
+        );
+        assertEq(endingFundMeBalance, 0);
+    }
+
+    //testing with multiple funded contract
+    function testWithdrawFromMultipleFunders() public {
+        //Arrange
+        //we use uint160 cause only these type of number's can be converted to address
+
+        uint160 numberofFunders = 10;
+        uint160 startingFunderIndex = 1; //we start from 1 bebcuse address(0) reverts sometimes
+
+        for (uint160 i = startingFunderIndex; i < numberofFunders; i++) {
+            //to create and add balance to the various funder address
+            hoax(address(i), STARTING_BALANCE);
+            fundMe.fund{value: SEND_VALUE}();
+        }
+
+        uint256 startingOwnerBalance = fundMe.getOwner().balance;
+        uint256 startingFundMeBalance = address(fundMe).balance;
+
+        //Assert
+        vm.startPrank(fundMe.getOwner());
+        fundMe.withdraw();
+        vm.stopPrank();
+
+        //Act
+        assert(address(fundMe).balance == 0);
+        assert(
+            (startingOwnerBalance + startingFundMeBalance) ==
+                fundMe.getOwner().balance
+        );
+    }
 }
 
 //notes
-//1.vm.prank(address) - sends the next tx from the address provided
+//1.vm.prank(address) - sends the next tx from the address provided this works only in test in foundry
 //2.makeAddr("user") - makes and fake address
 //3.vm.deal(USER,STARTING_BALANCE) - gives the balance in the USER i.e, fake address
+//4.hoax("user",value) - hoax is combination of prank and deal and is a standard function so doesn't require vm.*

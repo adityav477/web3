@@ -18,4 +18,8 @@ contract DeployFundMe is Script {
         vm.stopBroadcast();
         return fundMe;
     }
+
+    // function getAddressOfDeployFundMe() external returns (address) {
+    //     return address(this);
+    // }
 }

@@ -120,4 +120,9 @@ contract FundMe {
     function getFunder(uint256 index) public view returns (address) {
         return s_funder[index];
     }
+
+    //get's the owner of the contract
+    function getOwner() public view returns (address) {
+        return owner;
+    }
 }

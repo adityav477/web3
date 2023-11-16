@@ -171,6 +171,10 @@
     },
     "version": 1
   },
+  "storageLayout": {
+    "storage": [],
+    "types": {}
+  },
   "ast": {
     "absolutePath": "lib/forge-std/src/StdStorage.sol",
     "id": 10191,
