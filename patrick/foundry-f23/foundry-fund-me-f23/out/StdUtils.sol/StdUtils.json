@@ -77,10 +77,6 @@
     },
     "version": 1
   },
-  "storageLayout": {
-    "storage": [],
-    "types": {}
-  },
   "ast": {
     "absolutePath": "lib/forge-std/src/StdUtils.sol",
     "id": 12250,

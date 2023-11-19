@@ -291,10 +291,6 @@
     },
     "version": 1
   },
-  "storageLayout": {
-    "storage": [],
-    "types": {}
-  },
   "ast": {
     "absolutePath": "lib/chainlink-brownie-contracts/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol",
     "id": 46,

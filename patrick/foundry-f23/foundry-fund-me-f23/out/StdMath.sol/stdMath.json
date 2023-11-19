@@ -61,10 +61,6 @@
     },
     "version": 1
   },
-  "storageLayout": {
-    "storage": [],
-    "types": {}
-  },
   "ast": {
     "absolutePath": "lib/forge-std/src/StdMath.sol",
     "id": 8520,

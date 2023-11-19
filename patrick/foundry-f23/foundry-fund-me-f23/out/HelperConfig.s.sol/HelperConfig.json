@@ -371,305 +371,6 @@
     },
     "version": 1
   },
-  "storageLayout": {
-    "storage": [
-      {
-        "astId": 2399,
-        "contract": "script/HelperConfig.s.sol:HelperConfig",
-        "label": "stdstore",
-        "offset": 0,
-        "slot": "0",
-        "type": "t_struct(StdStorage)8551_storage"
-      },
-      {
-        "astId": 3893,
-        "contract": "script/HelperConfig.s.sol:HelperConfig",
-        "label": "stdChainsInitialized",
-        "offset": 0,
-        "slot": "7",
-        "type": "t_bool"
-      },
-      {
-        "astId": 3914,
-        "contract": "script/HelperConfig.s.sol:HelperConfig",
-        "label": "chains",
-        "offset": 0,
-        "slot": "8",
-        "type": "t_mapping(t_string_memory_ptr,t_struct(Chain)3909_storage)"
-      },
-      {
-        "astId": 3918,
-        "contract": "script/HelperConfig.s.sol:HelperConfig",
-        "label": "defaultRpcUrls",
-        "offset": 0,
-        "slot": "9",
-        "type": "t_mapping(t_string_memory_ptr,t_string_storage)"
-      },
-      {
-        "astId": 3922,
-        "contract": "script/HelperConfig.s.sol:HelperConfig",
-        "label": "idToAlias",
-        "offset": 0,
-        "slot": "10",
-        "type": "t_mapping(t_uint256,t_string_storage)"
-      },
-      {
-        "astId": 3925,
-        "contract": "script/HelperConfig.s.sol:HelperConfig",
-        "label": "fallbackToDefaultRpcUrls",
-        "offset": 0,
-        "slot": "11",
-        "type": "t_bool"
-      },
-      {
-        "astId": 4639,
-        "contract": "script/HelperConfig.s.sol:HelperConfig",
-        "label": "gasMeteringOff",
-        "offset": 1,
-        "slot": "11",
-        "type": "t_bool"
-      },
-      {
-        "astId": 2450,
-        "contract": "script/HelperConfig.s.sol:HelperConfig",
-        "label": "IS_SCRIPT",
-        "offset": 2,
-        "slot": "11",
-        "type": "t_bool"
-      },
-      {
-        "astId": 43503,
-        "contract": "script/HelperConfig.s.sol:HelperConfig",
-        "label": "activeNetworkConfig",
-        "offset": 0,
-        "slot": "12",
-        "type": "t_struct(NetworkConfig)43538_storage"
-      }
-    ],
-    "types": {
-      "t_address": {
-        "encoding": "inplace",
-        "label": "address",
-        "numberOfBytes": "20"
-      },
-      "t_array(t_bytes32)dyn_storage": {
-        "encoding": "dynamic_array",
-        "label": "bytes32[]",
-        "numberOfBytes": "32",
-        "base": "t_bytes32"
-      },
-      "t_bool": {
-        "encoding": "inplace",
-        "label": "bool",
-        "numberOfBytes": "1"
-      },
-      "t_bytes32": {
-        "encoding": "inplace",
-        "label": "bytes32",
-        "numberOfBytes": "32"
-      },
-      "t_bytes4": {
-        "encoding": "inplace",
-        "label": "bytes4",
-        "numberOfBytes": "4"
-      },
-      "t_mapping(t_address,t_mapping(t_bytes4,t_mapping(t_bytes32,t_bool)))": {
-        "encoding": "mapping",
-        "key": "t_address",
-        "label": "mapping(address => mapping(bytes4 => mapping(bytes32 => bool)))",
-        "numberOfBytes": "32",
-        "value": "t_mapping(t_bytes4,t_mapping(t_bytes32,t_bool))"
-      },
-      "t_mapping(t_address,t_mapping(t_bytes4,t_mapping(t_bytes32,t_uint256)))": {
-        "encoding": "mapping",
-        "key": "t_address",
-        "label": "mapping(address => mapping(bytes4 => mapping(bytes32 => uint256)))",
-        "numberOfBytes": "32",
-        "value": "t_mapping(t_bytes4,t_mapping(t_bytes32,t_uint256))"
-      },
-      "t_mapping(t_bytes32,t_bool)": {
-        "encoding": "mapping",
-        "key": "t_bytes32",
-        "label": "mapping(bytes32 => bool)",
-        "numberOfBytes": "32",
-        "value": "t_bool"
-      },
-      "t_mapping(t_bytes32,t_uint256)": {
-        "encoding": "mapping",
-        "key": "t_bytes32",
-        "label": "mapping(bytes32 => uint256)",
-        "numberOfBytes": "32",
-        "value": "t_uint256"
-      },
-      "t_mapping(t_bytes4,t_mapping(t_bytes32,t_bool))": {
-        "encoding": "mapping",
-        "key": "t_bytes4",
-        "label": "mapping(bytes4 => mapping(bytes32 => bool))",
-        "numberOfBytes": "32",
-        "value": "t_mapping(t_bytes32,t_bool)"
-      },
-      "t_mapping(t_bytes4,t_mapping(t_bytes32,t_uint256))": {
-        "encoding": "mapping",
-        "key": "t_bytes4",
-        "label": "mapping(bytes4 => mapping(bytes32 => uint256))",
-        "numberOfBytes": "32",
-        "value": "t_mapping(t_bytes32,t_uint256)"
-      },
-      "t_mapping(t_string_memory_ptr,t_string_storage)": {
-        "encoding": "mapping",
-        "key": "t_string_memory_ptr",
-        "label": "mapping(string => string)",
-        "numberOfBytes": "32",
-        "value": "t_string_storage"
-      },
-      "t_mapping(t_string_memory_ptr,t_struct(Chain)3909_storage)": {
-        "encoding": "mapping",
-        "key": "t_string_memory_ptr",
-        "label": "mapping(string => struct StdChains.Chain)",
-        "numberOfBytes": "32",
-        "value": "t_struct(Chain)3909_storage"
-      },
-      "t_mapping(t_uint256,t_string_storage)": {
-        "encoding": "mapping",
-        "key": "t_uint256",
-        "label": "mapping(uint256 => string)",
-        "numberOfBytes": "32",
-        "value": "t_string_storage"
-      },
-      "t_string_memory_ptr": {
-        "encoding": "bytes",
-        "label": "string",
-        "numberOfBytes": "32"
-      },
-      "t_string_storage": {
-        "encoding": "bytes",
-        "label": "string",
-        "numberOfBytes": "32"
-      },
-      "t_struct(Chain)3909_storage": {
-        "encoding": "inplace",
-        "label": "struct StdChains.Chain",
-        "numberOfBytes": "128",
-        "members": [
-          {
-            "astId": 3902,
-            "contract": "script/HelperConfig.s.sol:HelperConfig",
-            "label": "name",
-            "offset": 0,
-            "slot": "0",
-            "type": "t_string_storage"
-          },
-          {
-            "astId": 3904,
-            "contract": "script/HelperConfig.s.sol:HelperConfig",
-            "label": "chainId",
-            "offset": 0,
-            "slot": "1",
-            "type": "t_uint256"
-          },
-          {
-            "astId": 3906,
-            "contract": "script/HelperConfig.s.sol:HelperConfig",
-            "label": "chainAlias",
-            "offset": 0,
-            "slot": "2",
-            "type": "t_string_storage"
-          },
-          {
-            "astId": 3908,
-            "contract": "script/HelperConfig.s.sol:HelperConfig",
-            "label": "rpcUrl",
-            "offset": 0,
-            "slot": "3",
-            "type": "t_string_storage"
-          }
-        ]
-      },
-      "t_struct(NetworkConfig)43538_storage": {
-        "encoding": "inplace",
-        "label": "struct HelperConfig.NetworkConfig",
-        "numberOfBytes": "32",
-        "members": [
-          {
-            "astId": 43537,
-            "contract": "script/HelperConfig.s.sol:HelperConfig",
-            "label": "priceFeed",
-            "offset": 0,
-            "slot": "0",
-            "type": "t_address"
-          }
-        ]
-      },
-      "t_struct(StdStorage)8551_storage": {
-        "encoding": "inplace",
-        "label": "struct StdStorage",
-        "numberOfBytes": "224",
-        "members": [
-          {
-            "astId": 8531,
-            "contract": "script/HelperConfig.s.sol:HelperConfig",
-            "label": "slots",
-            "offset": 0,
-            "slot": "0",
-            "type": "t_mapping(t_address,t_mapping(t_bytes4,t_mapping(t_bytes32,t_uint256)))"
-          },
-          {
-            "astId": 8539,
-            "contract": "script/HelperConfig.s.sol:HelperConfig",
-            "label": "finds",
-            "offset": 0,
-            "slot": "1",
-            "type": "t_mapping(t_address,t_mapping(t_bytes4,t_mapping(t_bytes32,t_bool)))"
-          },
-          {
-            "astId": 8542,
-            "contract": "script/HelperConfig.s.sol:HelperConfig",
-            "label": "_keys",
-            "offset": 0,
-            "slot": "2",
-            "type": "t_array(t_bytes32)dyn_storage"
-          },
-          {
-            "astId": 8544,
-            "contract": "script/HelperConfig.s.sol:HelperConfig",
-            "label": "_sig",
-            "offset": 0,
-            "slot": "3",
-            "type": "t_bytes4"
-          },
-          {
-            "astId": 8546,
-            "contract": "script/HelperConfig.s.sol:HelperConfig",
-            "label": "_depth",
-            "offset": 0,
-            "slot": "4",
-            "type": "t_uint256"
-          },
-          {
-            "astId": 8548,
-            "contract": "script/HelperConfig.s.sol:HelperConfig",
-            "label": "_target",
-            "offset": 0,
-            "slot": "5",
-            "type": "t_address"
-          },
-          {
-            "astId": 8550,
-            "contract": "script/HelperConfig.s.sol:HelperConfig",
-            "label": "_set",
-            "offset": 0,
-            "slot": "6",
-            "type": "t_bytes32"
-          }
-        ]
-      },
-      "t_uint256": {
-        "encoding": "inplace",
-        "label": "uint256",
-        "numberOfBytes": "32"
-      }
-    }
-  },
   "ast": {
     "absolutePath": "script/HelperConfig.s.sol",
     "id": 43612,
@@ -684,7 +385,7 @@
         43498
       ],
       "MockV3Aggregator": [
-        44393
+        44548
       ],
       "Script": [
         2451
@@ -740,7 +441,7 @@
         "file": "../test/mocks/MockV3Aggregator.sol",
         "nameLocation": "-1:-1:-1",
         "scope": 43612,
-        "sourceUnit": 44394,
+        "sourceUnit": 44549,
         "symbolAliases": [
           {
             "foreign": {
@@ -748,7 +449,7 @@
               "name": "MockV3Aggregator",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 44393,
+              "referencedDeclaration": 44548,
               "src": "377:16:21",
               "typeDescriptions": {}
             },
@@ -1795,7 +1496,7 @@
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_MockV3Aggregator_$44393",
+                        "typeIdentifier": "t_contract$_MockV3Aggregator_$44548",
                         "typeString": "contract MockV3Aggregator"
                       },
                       "typeName": {
@@ -1808,13 +1509,13 @@
                             "2731:16:21"
                           ],
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 44393,
+                          "referencedDeclaration": 44548,
                           "src": "2731:16:21"
                         },
-                        "referencedDeclaration": 44393,
+                        "referencedDeclaration": 44548,
                         "src": "2731:16:21",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_MockV3Aggregator_$44393",
+                          "typeIdentifier": "t_contract$_MockV3Aggregator_$44548",
                           "typeString": "contract MockV3Aggregator"
                         }
                       },
@@ -1868,7 +1569,7 @@
                       "nodeType": "NewExpression",
                       "src": "2764:20:21",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_creation_nonpayable$_t_uint8_$_t_int256_$returns$_t_contract$_MockV3Aggregator_$44393_$",
+                        "typeIdentifier": "t_function_creation_nonpayable$_t_uint8_$_t_int256_$returns$_t_contract$_MockV3Aggregator_$44548_$",
                         "typeString": "function (uint8,int256) returns (contract MockV3Aggregator)"
                       },
                       "typeName": {
@@ -1881,13 +1582,13 @@
                             "2768:16:21"
                           ],
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 44393,
+                          "referencedDeclaration": 44548,
                           "src": "2768:16:21"
                         },
-                        "referencedDeclaration": 44393,
+                        "referencedDeclaration": 44548,
                         "src": "2768:16:21",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_MockV3Aggregator_$44393",
+                          "typeIdentifier": "t_contract$_MockV3Aggregator_$44548",
                           "typeString": "contract MockV3Aggregator"
                         }
                       }
@@ -1904,7 +1605,7 @@
                     "src": "2764:78:21",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_MockV3Aggregator_$44393",
+                      "typeIdentifier": "t_contract$_MockV3Aggregator_$44548",
                       "typeString": "contract MockV3Aggregator"
                     }
                   },
@@ -2019,7 +1720,7 @@
                             "referencedDeclaration": 43584,
                             "src": "2963:13:21",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_MockV3Aggregator_$44393",
+                              "typeIdentifier": "t_contract$_MockV3Aggregator_$44548",
                               "typeString": "contract MockV3Aggregator"
                             }
                           }
@@ -2027,7 +1728,7 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_MockV3Aggregator_$44393",
+                              "typeIdentifier": "t_contract$_MockV3Aggregator_$44548",
                               "typeString": "contract MockV3Aggregator"
                             }
                           ],
@@ -2210,7 +1911,7 @@
         ],
         "canonicalName": "HelperConfig",
         "contractDependencies": [
-          44393
+          44548
         ],
         "contractKind": "contract",
         "fullyImplemented": true,

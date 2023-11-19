@@ -36,8 +36,7 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
+                "metadata"
               ]
             }
           },
@@ -78,8 +77,7 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
+                "metadata"
               ]
             }
           },
@@ -120,8 +118,7 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
+                "metadata"
               ]
             }
           },
@@ -171,8 +168,7 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
+                "metadata"
               ]
             }
           },
@@ -227,8 +223,7 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
+                "metadata"
               ]
             }
           },
@@ -272,8 +267,7 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
+                "metadata"
               ]
             }
           },
@@ -316,8 +310,7 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
+                "metadata"
               ]
             }
           },
@@ -365,8 +358,7 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
+                "metadata"
               ]
             }
           },
@@ -407,8 +399,7 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
+                "metadata"
               ]
             }
           },
@@ -449,8 +440,7 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
+                "metadata"
               ]
             }
           },
@@ -493,8 +483,7 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
+                "metadata"
               ]
             }
           },
@@ -535,8 +524,7 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
+                "metadata"
               ]
             }
           },
@@ -582,8 +570,7 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
+                "metadata"
               ]
             }
           },
@@ -626,8 +613,7 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
+                "metadata"
               ]
             }
           },
@@ -671,8 +657,7 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
+                "metadata"
               ]
             }
           },
@@ -731,8 +716,7 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
+                "metadata"
               ]
             }
           },
@@ -776,8 +760,7 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
+                "metadata"
               ]
             }
           },
@@ -818,8 +801,7 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
+                "metadata"
               ]
             }
           },
@@ -860,8 +842,7 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
+                "metadata"
               ]
             }
           },
@@ -902,8 +883,7 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
+                "metadata"
               ]
             }
           },
@@ -916,6 +896,50 @@
       "artifacts": {
         "safeconsole": {
           "0.8.22+commit.4fc1097e.Linux.gcc": "safeconsole.sol/safeconsole.json"
+        }
+      }
+    },
+    "lib/foundry-devops/src/DevOpsTools.sol": {
+      "lastModificationDate": 1700299244424,
+      "contentHash": "61eb7b71f43e938f5da98a2b1212382c",
+      "sourceName": "lib/foundry-devops/src/DevOpsTools.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/console.sol"
+      ],
+      "versionRequirement": ">=0.8.13, <0.9.0",
+      "artifacts": {
+        "DevOpsTools": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "DevOpsTools.sol/DevOpsTools.json"
         }
       }
     },
@@ -944,8 +968,7 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
+                "metadata"
               ]
             }
           },
@@ -1006,8 +1029,7 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
+                "metadata"
               ]
             }
           },
@@ -1039,9 +1061,72 @@
         }
       }
     },
+    "script/Interactions.s.sol": {
+      "lastModificationDate": 1700317021873,
+      "contentHash": "93a8b93cb313df942754ac3b535f1089",
+      "sourceName": "script/Interactions.s.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/chainlink-brownie-contracts/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol",
+        "lib/forge-std/src/Base.sol",
+        "lib/forge-std/src/Script.sol",
+        "lib/forge-std/src/StdChains.sol",
+        "lib/forge-std/src/StdCheats.sol",
+        "lib/forge-std/src/StdJson.sol",
+        "lib/forge-std/src/StdMath.sol",
+        "lib/forge-std/src/StdStorage.sol",
+        "lib/forge-std/src/StdStyle.sol",
+        "lib/forge-std/src/StdUtils.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/console.sol",
+        "lib/forge-std/src/console2.sol",
+        "lib/forge-std/src/interfaces/IMulticall3.sol",
+        "lib/forge-std/src/safeconsole.sol",
+        "lib/foundry-devops/src/DevOpsTools.sol",
+        "src/FundMe.sol",
+        "src/PriceConverter.sol"
+      ],
+      "versionRequirement": "^0.8.21",
+      "artifacts": {
+        "FundFundMe": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "Interactions.s.sol/FundFundMe.json"
+        },
+        "WithdrawFundMe": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "Interactions.s.sol/WithdrawFundMe.json"
+        }
+      }
+    },
     "src/FundMe.sol": {
-      "lastModificationDate": 1700126212174,
-      "contentHash": "f5c308e7a8e60d330ec19a07c7a1f0e1",
+      "lastModificationDate": 1700161163735,
+      "contentHash": "c1689c0846355c76e56feeef87928037",
       "sourceName": "src/FundMe.sol",
       "solcConfig": {
         "settings": {
@@ -1064,8 +1149,7 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
+                "metadata"
               ]
             }
           },
@@ -1109,8 +1193,7 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
+                "metadata"
               ]
             }
           },
@@ -1128,10 +1211,10 @@
         }
       }
     },
-    "test/FundMeTest.t.sol": {
-      "lastModificationDate": 1700152208320,
-      "contentHash": "acbe65045166599123458d0117c6d689",
-      "sourceName": "test/FundMeTest.t.sol",
+    "test/integration/InteractionsTest.t.sol": {
+      "lastModificationDate": 1700317057851,
+      "contentHash": "afcecd3d6f9ea7e4882dc1598c42c5d1",
+      "sourceName": "test/integration/InteractionsTest.t.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -1153,8 +1236,117 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/chainlink-brownie-contracts/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol",
+        "lib/forge-std/lib/ds-test/src/test.sol",
+        "lib/forge-std/src/Base.sol",
+        "lib/forge-std/src/Script.sol",
+        "lib/forge-std/src/StdAssertions.sol",
+        "lib/forge-std/src/StdChains.sol",
+        "lib/forge-std/src/StdCheats.sol",
+        "lib/forge-std/src/StdError.sol",
+        "lib/forge-std/src/StdInvariant.sol",
+        "lib/forge-std/src/StdJson.sol",
+        "lib/forge-std/src/StdMath.sol",
+        "lib/forge-std/src/StdStorage.sol",
+        "lib/forge-std/src/StdStyle.sol",
+        "lib/forge-std/src/StdUtils.sol",
+        "lib/forge-std/src/Test.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/console.sol",
+        "lib/forge-std/src/console2.sol",
+        "lib/forge-std/src/interfaces/IMulticall3.sol",
+        "lib/forge-std/src/safeconsole.sol",
+        "lib/foundry-devops/src/DevOpsTools.sol",
+        "script/DeployFundMe.s.sol",
+        "script/HelperConfig.s.sol",
+        "script/Interactions.s.sol",
+        "src/FundMe.sol",
+        "src/PriceConverter.sol",
+        "test/mocks/MockV3Aggregator.sol"
+      ],
+      "versionRequirement": "^0.8.21",
+      "artifacts": {
+        "FundMeTestIntegration": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "InteractionsTest.t.sol/FundMeTestIntegration.json"
+        }
+      }
+    },
+    "test/mocks/MockV3Aggregator.sol": {
+      "lastModificationDate": 1700119428504,
+      "contentHash": "5dc48a685fb9d0ac657705ed298c6c27",
+      "sourceName": "test/mocks/MockV3Aggregator.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.21",
+      "artifacts": {
+        "MockV3Aggregator": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "MockV3Aggregator.sol/MockV3Aggregator.json"
+        }
+      }
+    },
+    "test/unit/FundMeTest.t.sol": {
+      "lastModificationDate": 1700316579305,
+      "contentHash": "4f7901a9848856bb2a8fb4de503a96d8",
+      "sourceName": "test/unit/FundMeTest.t.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
@@ -1193,48 +1385,6 @@
       "artifacts": {
         "FundMeTest": {
           "0.8.22+commit.4fc1097e.Linux.gcc": "FundMeTest.t.sol/FundMeTest.json"
-        }
-      }
-    },
-    "test/mocks/MockV3Aggregator.sol": {
-      "lastModificationDate": 1700119428504,
-      "contentHash": "5dc48a685fb9d0ac657705ed298c6c27",
-      "sourceName": "test/mocks/MockV3Aggregator.sol",
-      "solcConfig": {
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "metadata": {
-            "useLiteralContent": false,
-            "bytecodeHash": "ipfs",
-            "appendCBOR": true
-          },
-          "outputSelection": {
-            "*": {
-              "": [
-                "ast"
-              ],
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ]
-            }
-          },
-          "evmVersion": "paris",
-          "libraries": {}
-        }
-      },
-      "imports": [],
-      "versionRequirement": "^0.8.21",
-      "artifacts": {
-        "MockV3Aggregator": {
-          "0.8.22+commit.4fc1097e.Linux.gcc": "MockV3Aggregator.sol/MockV3Aggregator.json"
         }
       }
     }

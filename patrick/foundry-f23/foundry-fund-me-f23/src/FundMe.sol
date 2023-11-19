@@ -82,6 +82,24 @@ contract FundMe {
         require(successcall, "successcall failed");
     }
 
+    function cheaperwithdraw() public isowner {
+        uint256 funderlenght = s_funder.length;
+        for (
+            uint256 funderindex = 0;
+            funderindex < funderlenght;
+            funderindex++
+        ) {
+            s_addresstoamoundFuded[s_funder[funderindex]] = 0;
+        }
+
+        s_funder = new address[](0);
+
+        (bool successcall, ) = payable(msg.sender).call{
+            value: address(this).balance
+        }("");
+        require(successcall, "successcall failed");
+    }
+
     modifier isowner() {
         require(msg.sender == owner, "Must be owner");
         _;

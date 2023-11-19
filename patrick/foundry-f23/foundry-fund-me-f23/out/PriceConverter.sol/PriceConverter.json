@@ -69,26 +69,22 @@
     },
     "version": 1
   },
-  "storageLayout": {
-    "storage": [],
-    "types": {}
-  },
   "ast": {
     "absolutePath": "src/PriceConverter.sol",
-    "id": 43860,
+    "id": 43921,
     "exportedSymbols": {
       "AggregatorV3Interface": [
         45
       ],
       "PriceConverter": [
-        43859
+        43920
       ]
     },
     "nodeType": "SourceUnit",
     "src": "32:1382:23",
     "nodes": [
       {
-        "id": 43813,
+        "id": 43874,
         "nodeType": "PragmaDirective",
         "src": "32:24:23",
         "nodes": [],
@@ -100,19 +96,19 @@
         ]
       },
       {
-        "id": 43815,
+        "id": 43876,
         "nodeType": "ImportDirective",
         "src": "58:105:23",
         "nodes": [],
         "absolutePath": "lib/chainlink-brownie-contracts/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol",
         "file": "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 43860,
+        "scope": 43921,
         "sourceUnit": 46,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 43814,
+              "id": 43875,
               "name": "AggregatorV3Interface",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
@@ -126,17 +122,17 @@
         "unitAlias": ""
       },
       {
-        "id": 43859,
+        "id": 43920,
         "nodeType": "ContractDefinition",
         "src": "165:1248:23",
         "nodes": [
           {
-            "id": 43837,
+            "id": 43898,
             "nodeType": "FunctionDefinition",
             "src": "194:815:23",
             "nodes": [],
             "body": {
-              "id": 43836,
+              "id": 43897,
               "nodeType": "Block",
               "src": "290:719:23",
               "nodes": [],
@@ -144,7 +140,7 @@
                 {
                   "assignments": [
                     null,
-                    43824,
+                    43885,
                     null,
                     null,
                     null
@@ -153,12 +149,12 @@
                     null,
                     {
                       "constant": false,
-                      "id": 43824,
+                      "id": 43885,
                       "mutability": "mutable",
                       "name": "answer",
                       "nameLocation": "688:6:23",
                       "nodeType": "VariableDeclaration",
-                      "scope": 43836,
+                      "scope": 43897,
                       "src": "681:13:23",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -167,7 +163,7 @@
                         "typeString": "int256"
                       },
                       "typeName": {
-                        "id": 43823,
+                        "id": 43884,
                         "name": "int256",
                         "nodeType": "ElementaryTypeName",
                         "src": "681:6:23",
@@ -182,24 +178,24 @@
                     null,
                     null
                   ],
-                  "id": 43828,
+                  "id": 43889,
                   "initialValue": {
                     "arguments": [],
                     "expression": {
                       "argumentTypes": [],
                       "expression": {
-                        "id": 43825,
+                        "id": 43886,
                         "name": "dataFeed",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 43818,
+                        "referencedDeclaration": 43879,
                         "src": "802:8:23",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_AggregatorV3Interface_$45",
                           "typeString": "contract AggregatorV3Interface"
                         }
                       },
-                      "id": 43826,
+                      "id": 43887,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -214,7 +210,7 @@
                         "typeString": "function () view external returns (uint80,int256,uint256,uint256,uint80)"
                       }
                     },
-                    "id": 43827,
+                    "id": 43888,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -241,17 +237,17 @@
                           "typeIdentifier": "t_int256",
                           "typeString": "int256"
                         },
-                        "id": 43833,
+                        "id": 43894,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
-                          "id": 43831,
+                          "id": 43892,
                           "name": "answer",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 43824,
+                          "referencedDeclaration": 43885,
                           "src": "988:6:23",
                           "typeDescriptions": {
                             "typeIdentifier": "t_int256",
@@ -262,7 +258,7 @@
                         "operator": "*",
                         "rightExpression": {
                           "hexValue": "31653130",
-                          "id": 43832,
+                          "id": 43893,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -290,7 +286,7 @@
                           "typeString": "int256"
                         }
                       ],
-                      "id": 43830,
+                      "id": 43891,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -302,14 +298,14 @@
                         "typeString": "type(uint256)"
                       },
                       "typeName": {
-                        "id": 43829,
+                        "id": 43890,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "980:7:23",
                         "typeDescriptions": {}
                       }
                     },
-                    "id": 43834,
+                    "id": 43895,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -325,8 +321,8 @@
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 43822,
-                  "id": 43835,
+                  "functionReturnParameters": 43883,
+                  "id": 43896,
                   "nodeType": "Return",
                   "src": "973:29:23"
                 }
@@ -338,17 +334,17 @@
             "name": "giverate",
             "nameLocation": "203:8:23",
             "parameters": {
-              "id": 43819,
+              "id": 43880,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 43818,
+                  "id": 43879,
                   "mutability": "mutable",
                   "name": "dataFeed",
                   "nameLocation": "243:8:23",
                   "nodeType": "VariableDeclaration",
-                  "scope": 43837,
+                  "scope": 43898,
                   "src": "221:30:23",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -357,10 +353,10 @@
                     "typeString": "contract AggregatorV3Interface"
                   },
                   "typeName": {
-                    "id": 43817,
+                    "id": 43878,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 43816,
+                      "id": 43877,
                       "name": "AggregatorV3Interface",
                       "nameLocations": [
                         "221:21:23"
@@ -382,17 +378,17 @@
               "src": "211:46:23"
             },
             "returnParameters": {
-              "id": 43822,
+              "id": 43883,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 43821,
+                  "id": 43882,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 43837,
+                  "scope": 43898,
                   "src": "281:7:23",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -401,7 +397,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 43820,
+                    "id": 43881,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "281:7:23",
@@ -415,18 +411,18 @@
               ],
               "src": "280:9:23"
             },
-            "scope": 43859,
+            "scope": 43920,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "internal"
           },
           {
-            "id": 43858,
+            "id": 43919,
             "nodeType": "FunctionDefinition",
             "src": "1092:319:23",
             "nodes": [],
             "body": {
-              "id": 43857,
+              "id": 43918,
               "nodeType": "Block",
               "src": "1238:173:23",
               "nodes": [],
@@ -439,7 +435,7 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 43854,
+                        "id": 43915,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -451,17 +447,17 @@
                                 "typeIdentifier": "t_uint256",
                                 "typeString": "uint256"
                               },
-                              "id": 43851,
+                              "id": 43912,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
                               "lValueRequested": false,
                               "leftExpression": {
-                                "id": 43847,
+                                "id": 43908,
                                 "name": "depositedETH",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 43839,
+                                "referencedDeclaration": 43900,
                                 "src": "1257:12:23",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_uint256",
@@ -473,11 +469,11 @@
                               "rightExpression": {
                                 "arguments": [
                                   {
-                                    "id": 43849,
+                                    "id": 43910,
                                     "name": "dataFeed",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 43842,
+                                    "referencedDeclaration": 43903,
                                     "src": "1281:8:23",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_contract$_AggregatorV3Interface_$45",
@@ -492,18 +488,18 @@
                                       "typeString": "contract AggregatorV3Interface"
                                     }
                                   ],
-                                  "id": 43848,
+                                  "id": 43909,
                                   "name": "giverate",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 43837,
+                                  "referencedDeclaration": 43898,
                                   "src": "1272:8:23",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_function_internal_view$_t_contract$_AggregatorV3Interface_$45_$returns$_t_uint256_$",
                                     "typeString": "function (contract AggregatorV3Interface) view returns (uint256)"
                                   }
                                 },
-                                "id": 43850,
+                                "id": 43911,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
@@ -526,7 +522,7 @@
                               }
                             }
                           ],
-                          "id": 43852,
+                          "id": 43913,
                           "isConstant": false,
                           "isInlineArray": false,
                           "isLValue": false,
@@ -543,7 +539,7 @@
                         "operator": "/",
                         "rightExpression": {
                           "hexValue": "31653138",
-                          "id": 43853,
+                          "id": 43914,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -564,7 +560,7 @@
                         }
                       }
                     ],
-                    "id": 43855,
+                    "id": 43916,
                     "isConstant": false,
                     "isInlineArray": false,
                     "isLValue": false,
@@ -577,8 +573,8 @@
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 43846,
-                  "id": 43856,
+                  "functionReturnParameters": 43907,
+                  "id": 43917,
                   "nodeType": "Return",
                   "src": "1248:51:23"
                 }
@@ -590,17 +586,17 @@
             "name": "convertodollars",
             "nameLocation": "1101:15:23",
             "parameters": {
-              "id": 43843,
+              "id": 43904,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 43839,
+                  "id": 43900,
                   "mutability": "mutable",
                   "name": "depositedETH",
                   "nameLocation": "1134:12:23",
                   "nodeType": "VariableDeclaration",
-                  "scope": 43858,
+                  "scope": 43919,
                   "src": "1126:20:23",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -609,7 +605,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 43838,
+                    "id": 43899,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1126:7:23",
@@ -622,12 +618,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 43842,
+                  "id": 43903,
                   "mutability": "mutable",
                   "name": "dataFeed",
                   "nameLocation": "1178:8:23",
                   "nodeType": "VariableDeclaration",
-                  "scope": 43858,
+                  "scope": 43919,
                   "src": "1156:30:23",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -636,10 +632,10 @@
                     "typeString": "contract AggregatorV3Interface"
                   },
                   "typeName": {
-                    "id": 43841,
+                    "id": 43902,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 43840,
+                      "id": 43901,
                       "name": "AggregatorV3Interface",
                       "nameLocations": [
                         "1156:21:23"
@@ -661,17 +657,17 @@
               "src": "1116:76:23"
             },
             "returnParameters": {
-              "id": 43846,
+              "id": 43907,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 43845,
+                  "id": 43906,
                   "mutability": "mutable",
                   "name": "ethindollars",
                   "nameLocation": "1224:12:23",
                   "nodeType": "VariableDeclaration",
-                  "scope": 43858,
+                  "scope": 43919,
                   "src": "1216:20:23",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -680,7 +676,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 43844,
+                    "id": 43905,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1216:7:23",
@@ -694,7 +690,7 @@
               ],
               "src": "1215:22:23"
             },
-            "scope": 43859,
+            "scope": 43920,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "internal"
@@ -707,11 +703,11 @@
         "contractKind": "library",
         "fullyImplemented": true,
         "linearizedBaseContracts": [
-          43859
+          43920
         ],
         "name": "PriceConverter",
         "nameLocation": "173:14:23",
-        "scope": 43860,
+        "scope": 43921,
         "usedErrors": [],
         "usedEvents": []
       }
