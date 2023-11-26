@@ -1212,8 +1212,8 @@
       }
     },
     "test/integration/InteractionsTest.t.sol": {
-      "lastModificationDate": 1700317207655,
-      "contentHash": "0cce3e22827009704d2f8f061d59e98c",
+      "lastModificationDate": 1701014513315,
+      "contentHash": "99a43f76135001de4c0aec1b3a8c1660",
       "sourceName": "test/integration/InteractionsTest.t.sol",
       "solcConfig": {
         "settings": {

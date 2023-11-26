@@ -21,7 +21,7 @@ contract FundMeTestIntegration is Test {
     function testUserCanFundInteractions() public {
         FundFundMe fundFundMe = new FundFundMe();
         fundFundMe.fundFundMe(address(fundMe));
-    
+
         //coul dhave used assert(fundMe.getFunder(0), fundMe.getOwner()) if used vm.broadcast() for deployin gin interactions.s.sol
         assertEq(fundMe.getFunder(0), USER);
 
