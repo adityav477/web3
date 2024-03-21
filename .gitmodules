@@ -1,3 +1,6 @@
 [submodule "patrick/foundry-f23/foundry-fund-me-f23/lib/foundry-devops"]
 	path = patrick/foundry-f23/foundry-fund-me-f23/lib/foundry-devops
 	url = https://github.com/Cyfrin/foundry-devops
+[submodule "patrick/foundry-f23/foundry-simpleStorage-f23/lib/forge-std"]
+	path = patrick/foundry-f23/foundry-simpleStorage-f23/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std

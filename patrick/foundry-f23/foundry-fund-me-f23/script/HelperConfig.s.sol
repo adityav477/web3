@@ -10,7 +10,7 @@ import {Script} from "forge-std/Script.sol";
 //to import mocked aggregator
 import {MockV3Aggregator} from "../test/mocks/MockV3Aggregator.sol";
 
-//magic numbers to pass through to create a mockV3 in anvil
+//magic numbers to pass through to create a mockV3 in anvil 
 uint8 constant DECIMAL = 8;
 int256 constant INITIAL_PRICE = 2000e8;
 
