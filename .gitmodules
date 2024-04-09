@@ -7,3 +7,15 @@
 [submodule "patrick/foundry-f23/foundry-FundMe-f23/lib/forge-std"]
 	path = patrick/foundry-f23/foundry-FundMe-f23/lib/forge-std
 	url = https://github.com/foundry-rs/forge-std
+[submodule "patrick/foundry-f23/foundry-FundMe-f23/lib/chainlink-brownie-contracts"]
+	path = patrick/foundry-f23/foundry-FundMe-f23/lib/chainlink-brownie-contracts
+	url = https://github.com/smartcontractkit/chainlink-brownie-contracts
+[submodule "patrick/foundry-f23/foundry-FundMe2-f23/lib/forge-std"]
+	path = patrick/foundry-f23/foundry-FundMe2-f23/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "patrick/foundry-f23/foundry-FundMe2-f23/lib/chainlink-brownie-contracts"]
+	path = patrick/foundry-f23/foundry-FundMe2-f23/lib/chainlink-brownie-contracts
+	url = https://github.com/smartcontractkit/chainlink-brownie-contracts
+[submodule "patrick/foundry-f23/foundry-FundMe-f23/lib/foundry-devops"]
+	path = patrick/foundry-f23/foundry-FundMe-f23/lib/foundry-devops
+	url = https://github.com/Cyfrin/foundry-devops
