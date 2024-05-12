@@ -19,3 +19,15 @@
 [submodule "patrick/foundry-f23/foundry-FundMe-f23/lib/foundry-devops"]
 	path = patrick/foundry-f23/foundry-FundMe-f23/lib/foundry-devops
 	url = https://github.com/Cyfrin/foundry-devops
+[submodule "patrick/raffle/lib/forge-std"]
+	path = patrick/raffle/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "patrick/raffle/lib/chainlink-brownie-contracts"]
+	path = patrick/raffle/lib/chainlink-brownie-contracts
+	url = https://github.com/smartcontractkit/chainlink-brownie-contracts
+[submodule "patrick/raffle/lib/solmate"]
+	path = patrick/raffle/lib/solmate
+	url = https://github.com/transmissions11/solmate
+[submodule "patrick/raffle/lib/foundry-devops"]
+	path = patrick/raffle/lib/foundry-devops
+	url = https://github.com/cyfrin/foundry-devops
