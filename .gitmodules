@@ -31,3 +31,6 @@
 [submodule "patrick/raffle/lib/foundry-devops"]
 	path = patrick/raffle/lib/foundry-devops
 	url = https://github.com/cyfrin/foundry-devops
+[submodule "patrick/foundry-f23/foundry-FundMe2-f23/lib/foundry-devops"]
+	path = patrick/foundry-f23/foundry-FundMe2-f23/lib/foundry-devops
+	url = https://github.com/ChainAccelOrg/foundry-devops

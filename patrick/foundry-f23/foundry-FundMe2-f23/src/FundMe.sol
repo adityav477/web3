@@ -15,16 +15,16 @@ contract FundMe {
     AggregatorV3Interface dataFeed;
 
     //declaring the minimum USD
-    uint256 public constant MINIMUM_USD = 5 * 1e18;
+    uint256 private constant MINIMUM_USD = 5 * 1e18;
 
     //address array to save the funders addresseses
-    address[] public funder;
+    address[] private s_funder;
 
     //mapping to map the addresses of funders to the amoutn they have deposited
     mapping(address funder => uint256 amountFunded) addressToAmount;
 
     //to save make the address of deployer as the only one to be able to withdraw the funders
-    address public immutable i_owner;
+    address private immutable i_owner;
 
     //constructor acts as groundwork while deploying the contracts
     constructor(address priceFeedAddress) {
@@ -37,17 +37,18 @@ contract FundMe {
         if (!(msg.value.getConversionRate(dataFeed) >= MINIMUM_USD)) {
             revert InSufficientFunds();
         }
-        funder.push(msg.sender);
+        s_funder.push(msg.sender);
         addressToAmount[msg.sender] = addressToAmount[msg.sender] + msg.value;
     }
 
     //to winthdraw
     function withdraw() public onlyOwner {
         //emptying the funders array and the addressToAmount funded
-        for (uint256 index = 0; index < funder.length; index++) {
-            addressToAmount[funder[index]] = 0;
+
+        for (uint256 index = 0; index < s_funder.length; index++) {
+            addressToAmount[s_funder[index]] = 0;
         }
-        funder = new address[](0);
+        s_funder = new address[](0);
 
         //now need to transfer the money saved in the contract back to the i_owner
         (bool success, ) = payable(msg.sender).call{
@@ -59,9 +60,23 @@ contract FundMe {
         }
     }
 
-    //get version to test AggregatorV3Interface
-    function getVersion() public view returns (uint256) {
-        return dataFeed.version();
+    function cheaperWithdraw() public onlyOwner {
+        //cheaper because here we don't read from a storage variable with eveyr loop instance
+        uint256 fundersLength = s_funder.length;
+
+        for (uint256 index = 0; index < fundersLength; index++) {
+            addressToAmount[s_funder[index]] = 0;
+        }
+        s_funder = new address[](0);
+
+        //now need to transfer the money saved in the contract back to the i_owner
+        (bool success, ) = payable(msg.sender).call{
+            value: address(this).balance
+        }("");
+
+        if (!success) {
+            revert TransferFailed();
+        }
     }
 
     //modifieres
@@ -72,20 +87,37 @@ contract FundMe {
         _;
     }
 
-    //receive
-    receive() external payable {
-        fund();
+    // //receive
+    // receive() external payable {
+    //     fund();
+    // }
+    //
+    // fallback() external payable {
+    //     fund();
+    // }
+
+    //View functions to read the values of private stored variables or constants
+    //get version to test AggregatorV3Interface
+
+    function getMinimumUSD() public pure returns (uint256) {
+        return MINIMUM_USD;
     }
 
-    fallback() external payable {
-        fund();
+    function getFundersAddress(uint256 index) public view returns (address) {
+        return s_funder[index];
     }
 
-
-    //View functions to read the values of private stored variables or constants 
-    function getAddressToAmount(address sentAddress) external view returns(uint256){
-      return addressToAmount[sentAddress];
+    function getVersion() public view returns (uint256) {
+        return dataFeed.version();
     }
 
+    function getAddressToAmount(
+        address sentAddress
+    ) external view returns (uint256) {
+        return addressToAmount[sentAddress];
+    }
 
+    function getOwner() external view returns (address) {
+        return i_owner;
+    }
 }

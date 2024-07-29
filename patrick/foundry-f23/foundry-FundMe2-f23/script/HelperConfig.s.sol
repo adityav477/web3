@@ -19,7 +19,7 @@ contract HelperConfig is Script {
         if (chainId == 11155111) {
             actualNetworkDetails = getSepolia();
         } else {
-          actualNetworkDetails = getLocalChain();
+            actualNetworkDetails = getLocalChain();
         }
     }
 
@@ -32,15 +32,15 @@ contract HelperConfig is Script {
     }
 
     //get address of Aggregatov3Interface for local chain using mocked StdChains
-    function getLocalChain() public returns (NetworkDetails memory){
-      //if a address is already deployed then why to use and deploy other chain 
-      if(actualNetworkDetails.priceFeed != address(0)){
-        return actualNetworkDetails;
-      }
+    function getLocalChain() public returns (NetworkDetails memory) {
+        //if a address is already deployed then why to use and deploy other chain
+        if (actualNetworkDetails.priceFeed != address(0)) {
+            return actualNetworkDetails;
+        }
 
-      vm.startBroadcast();
-      MockV3Aggregator mockV3Aggregator = new MockV3Aggregator(8, 2000e8);
-      vm.stopBroadcast();
-      return NetworkDetails({priceFeed: address(mockV3Aggregator)});
+        vm.startBroadcast();
+        MockV3Aggregator mockV3Aggregator = new MockV3Aggregator(8, 2000e8);
+        vm.stopBroadcast();
+        return NetworkDetails({priceFeed: address(mockV3Aggregator)});
     }
 }
