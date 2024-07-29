@@ -34,3 +34,6 @@
 [submodule "patrick/foundry-f23/foundry-FundMe2-f23/lib/foundry-devops"]
 	path = patrick/foundry-f23/foundry-FundMe2-f23/lib/foundry-devops
 	url = https://github.com/ChainAccelOrg/foundry-devops
+[submodule "patrick/raffle2/lib/forge-std"]
+	path = patrick/raffle2/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
