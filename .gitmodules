@@ -46,3 +46,6 @@
 [submodule "patrick/raffle2/lib/foundry-devops"]
 	path = patrick/raffle2/lib/foundry-devops
 	url = https://github.com/Cyfrin/foundry-devops
+[submodule "patrick/foundry-ERC20-f23/lib/forge-std"]
+	path = patrick/foundry-ERC20-f23/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
