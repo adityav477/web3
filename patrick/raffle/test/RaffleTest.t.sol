@@ -155,13 +155,13 @@ contract RaffleTest is Test {
         _;
     }
 
-    //to skip the contracts using vrfmock when the chainId is sepolia cause the difference in 
-    //actual vrc(onchain) and the mockvrf using here 
+    //to skip the contracts using vrfmock when the chainId is sepolia cause the difference in
+    //actual vrc(onchain) and the mockvrf using here
     modifier skipForForkSepolia() {
-      if(block.chainid == 11155111){
-        return;
-      }
-      _;
+        if (block.chainid == 11155111) {
+            return;
+        }
+        _;
     }
 
     ///////////////////// ///
@@ -191,7 +191,6 @@ contract RaffleTest is Test {
         raffle.performUpkeep("");
     }
 
-
     function testPerformUpKeepEmitsRequestId()
         external
         playerEnteredandTimePassed
@@ -216,7 +215,7 @@ contract RaffleTest is Test {
     //for random requestId we get revert back
     function testFullFillRandomWordsFailsForRandomRequestId(
         uint256 randomRequestId
-    ) external playerEnteredandTimePassed skipForForkSepolia{
+    ) external playerEnteredandTimePassed skipForForkSepolia {
         //Act/Assert
 
         vm.expectRevert("nonexistent request");

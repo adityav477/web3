@@ -37,3 +37,12 @@
 [submodule "patrick/raffle2/lib/forge-std"]
 	path = patrick/raffle2/lib/forge-std
 	url = https://github.com/foundry-rs/forge-std
+[submodule "patrick/raffle2/lib/chainlink-brownie-contracts"]
+	path = patrick/raffle2/lib/chainlink-brownie-contracts
+	url = https://github.com/smartcontractkit/chainlink-brownie-contracts
+[submodule "patrick/raffle2/lib/solmate"]
+	path = patrick/raffle2/lib/solmate
+	url = https://github.com/transmissions11/solmate
+[submodule "patrick/raffle2/lib/foundry-devops"]
+	path = patrick/raffle2/lib/foundry-devops
+	url = https://github.com/Cyfrin/foundry-devops
