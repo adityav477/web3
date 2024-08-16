@@ -49,3 +49,15 @@
 [submodule "patrick/foundry-ERC20-f23/lib/forge-std"]
 	path = patrick/foundry-ERC20-f23/lib/forge-std
 	url = https://github.com/foundry-rs/forge-std
+[submodule "patrick/foundry-ERC20-f23/lib/openzeppelin-contracts"]
+	path = patrick/foundry-ERC20-f23/lib/openzeppelin-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts
+[submodule "patrick/foundry-BasicNFT-f23/lib/forge-std"]
+	path = patrick/foundry-BasicNFT-f23/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "patrick/foundry-BasicNFT-f23/lib/openzeppelin-contracts"]
+	path = patrick/foundry-BasicNFT-f23/lib/openzeppelin-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts
+[submodule "patrick/foundry-BasicNFT-f23/lib/foundry-devops"]
+	path = patrick/foundry-BasicNFT-f23/lib/foundry-devops
+	url = https://github.com/Cyfrin/foundry-devops
