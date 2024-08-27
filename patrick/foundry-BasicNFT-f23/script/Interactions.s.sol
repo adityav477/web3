@@ -9,7 +9,7 @@ import {MoodNft} from "../src/MoodNft.sol";
 
 contract MintNftInteractions is Script {
     string public PUG =
-        "https://ipfs.io/ipfs/bafybeig37ioir76s7mg5oobetncojcm3c3hxasyd4rvid4jqhy4gkaheg4/?filename=0-PUG.json";
+        "ipfs://bafybeig37ioir76s7mg5oobetncojcm3c3hxasyd4rvid4jqhy4gkaheg4/?filename=0-PUG.json";
 
     function mintNftConfig(address mostRecentDeployed) public {
         vm.startBroadcast();

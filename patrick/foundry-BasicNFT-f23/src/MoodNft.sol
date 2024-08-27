@@ -15,7 +15,7 @@ contract MoodNft is ERC721 {
     string private s_sadSvgUri;
 
     /* Mappings */
-    mapping(uint256 tokneId => Mood) private s_tokenIdToMood;
+    mapping(uint256 tokenId => Mood) private s_tokenIdToMood;
 
     /* enum */
     enum Mood {
