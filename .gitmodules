@@ -61,3 +61,27 @@
 [submodule "patrick/foundry-BasicNFT-f23/lib/foundry-devops"]
 	path = patrick/foundry-BasicNFT-f23/lib/foundry-devops
 	url = https://github.com/Cyfrin/foundry-devops
+[submodule "patrick/lib/forge-std"]
+	path = patrick/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "patrick/foundry-stablecoin/lib/forge-std"]
+	path = patrick/foundry-stablecoin/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "patrick/foundry-stablecoin/lib/foundry-devops"]
+	path = patrick/foundry-stablecoin/lib/foundry-devops
+	url = https://github.com/Cyfrin/foundry-devops
+[submodule "patrick/foundry-stablecoin/lib/openzeppelin-contracts"]
+	path = patrick/foundry-stablecoin/lib/openzeppelin-contracts
+	url = https://github.com/openzepplein/openzeppelin-contracts
+[submodule "patrick/charity/lib/forge-std"]
+	path = patrick/charity/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "patrick/charity/lib/foundry-devops"]
+	path = patrick/charity/lib/foundry-devops
+	url = https://github.com/cyfrin/foundry-devops
+[submodule "patrick/charity/lib/chainlink-brownie-contracts"]
+	path = patrick/charity/lib/chainlink-brownie-contracts
+	url = https://github.com/smartcontractkit/chainlink-brownie-contracts
+[submodule "patrick/foundry-stablecoin/lib/chainlink-brownie-contracts"]
+	path = patrick/foundry-stablecoin/lib/chainlink-brownie-contracts
+	url = https://github.com/smartcontractkit/chainlink-brownie-contracts
